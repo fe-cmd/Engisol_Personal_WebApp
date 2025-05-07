@@ -17,7 +17,9 @@ from dotenv import load_dotenv
 from pprint import pprint
 from django.contrib import messages
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://engisol-personal-webapp.onrender.com"
+]
 
 env = environ.Env()
 environ.Env.read_env()
